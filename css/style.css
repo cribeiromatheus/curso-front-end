@@ -158,7 +158,7 @@ footer {
 
 .mod1 {
     width: 100%;
-    height: 40rem;
+    height: auto;
 }
 
 .cog-form__content {
@@ -168,4 +168,19 @@ footer {
     border-radius: 10px !important;
 }
 
+@media (max-width: 1200px) {
+    
+    article, section nav {
+        width: 93% !important;         
+        overflow: hidden;       
+    }
 
+    section nav {    
+        text-align: center;
+    }
+
+    #bg1 img {
+        width: 100%;
+    }
+  
+}

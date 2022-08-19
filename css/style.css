@@ -1,5 +1,6 @@
 html {
     font-size: 62.5%;
+    overflow: scroll;
 }
 
 img {
@@ -229,7 +230,6 @@ footer {
     padding: 10px 20px;    
 }
 
-
 @media (max-width: 1200px) {
     
     article, section nav {
@@ -246,7 +246,7 @@ footer {
     }
 
     .banner video {
-        width: 100%!important;
+        width: 99% !important;
         margin-top: 1rem;
     }
 

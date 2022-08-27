@@ -1,10 +1,17 @@
 html {
     font-size: 62.5%;
+    overflow: scroll;
+    max-width: 1366px;
 }
 
 img {
     max-width: 100%;
     height: auto;
+}
+
+article h4 {
+    margin-bottom: 5rem;
+    font-weight: 200;
 }
 
 header {
@@ -14,9 +21,8 @@ header {
 }
 
 header img {
-    width: 20rem;
-    z-index: 3;
-    
+    width: 25rem;
+    z-index: 3;    
 }
 
 header hr, footer hr {
@@ -130,7 +136,13 @@ footer {
  display: block;
  width: 100%;
  font-size: 1.6rem;
- padding-bottom: 1rem;
+ padding-bottom: 1rem; 
+}
+
+footer a {
+    text-decoration: none;
+    color:#ff5500;
+    font-weight: bold;
 }
 /*IDS*/
 #bg1 {
@@ -139,19 +151,69 @@ footer {
 }
 
 #bg1 img {
-    height: 15rem;
-    width: 100%;;
+    height: 18rem;
+    width: 100%;    
 }
 
 #logo1 {
     position: absolute;
-    top: 2rem;
-    left: 1rem;
+    top: 2rem;    
+    width: 100%;
+}
+
+#lpsec {
+    margin: 0 auto;
+    padding-left: 1.5rem;
 }
 
 #container1 {
     height: 390px;
     overflow: hidden;
+    margin: 4rem 2rem;
+}
+
+#toplp img {
+    width: 55%;
+    float: left;
+}
+
+#toplp2 {
+    background-color:#000;
+    z-index: 4;
+    width: 28%;
+    float: left;
+    padding: 3% 1% 1% 8%;    
+}
+
+#toplp2 p {
+    text-indent: 0px !important;
+    text-align: center;
+    color: white;
+    font-weight: bold !important;
+    font-size: 2.3rem;
+}
+
+#lpbg {
+    background-color: #000 !important;
+    width: 100% !important;
+    padding: 3rem 0rem !important;
+}
+
+#footerlp {
+    width: 100%;
+    display: block;
+}
+
+#artlp {
+    width: 94%;
+    margin: 2% auto;
+    background-color: #000;
+    color: white;
+}
+
+#artlp h2 {
+    font-size: 2.5rem;
+    line-height: 3rem;
 }
 
 /*Classes*/
@@ -168,6 +230,35 @@ footer {
     border-radius: 10px !important;
 }
 
+.banner video {       
+    margin: 1rem 0rem;
+    display: block; 
+}
+
+.buttoncta {
+    margin-top: 4rem;
+}
+
+.buttoncta a {
+    text-decoration: none;
+    color: white;
+    background-color:#ff5500;
+    border-radius: 20px;
+    font-weight: bold;
+    padding: 10px 20px;    
+}
+
+.headerlp {
+    background-color: rgba(255, 80, 0, .6);
+    width: 100%;
+    height: 10rem;
+    padding-top: 1rem;   
+}
+
+.imglp, .imglp2 {
+    width: 100%;
+}
+
 @media (max-width: 1200px) {
     
     article, section nav {
@@ -182,5 +273,54 @@ footer {
     #bg1 img {
         width: 100%;
     }
-  
+
+    .banner video {
+        width: 99% !important;
+        margin-top: 1rem;
+    }
+
+    #toplp img {
+        width: 100%;
+        display: block;
+    }
+
+    #toplp2 {
+        width: 100%;
+        display: block;
+        padding: 6% 0% 1% 0%;
+    }   
+
 }
+
+@media (max-width: 1100px) {
+    .headerlp {
+        display: block;
+        height: 13rem !important;
+        padding-top: 1rem !important;        
+    }
+
+    .headerlp h2 {
+        font-size: 4rem !important;
+        line-height: 5rem !important;
+    }
+}
+
+@media (max-width: 860px) {
+    .headerlp {   
+        height: 17rem !important;
+    }
+}
+
+@media (max-width: 640px) {
+    .headerlp {   
+        height: 19rem !important;
+    }
+}
+
+@media (max-width: 446px) {
+    .headerlp {   
+        height: 25rem !important;
+    }
+}
+
+

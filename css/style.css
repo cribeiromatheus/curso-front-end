@@ -124,6 +124,12 @@ section nav {
     padding: 2rem;
 }
 
+summary::before {
+    content: "+ ";
+    color:#000;
+    font-size: 3rem;
+}
+
 footer p {
     text-align: center; 
     color: white;   
@@ -248,6 +254,25 @@ footer a {
     padding: 10px 20px;    
 }
 
+.conjunto hr {
+    color: #ff5500;
+    border-top: 2rem solid #ff5500;
+}
+
+.conjunto h2 {
+    font-size: 4rem !important;
+    margin: 3rem 0rem;
+}
+
+.conjunto details summary {
+    margin: 2rem;
+    cursor: pointer;   
+    list-style-type: none; 
+    background-color: #ff5500;
+    width: 35%;
+    transition: .2s;
+}
+
 .headerlp {
     background-color: rgba(255, 80, 0, .6);
     width: 100%;
@@ -257,6 +282,10 @@ footer a {
 
 .imglp, .imglp2 {
     width: 100%;
+}
+
+.imglp2 {
+    margin-bottom: 10rem;
 }
 
 @media (max-width: 1200px) {
@@ -309,6 +338,10 @@ footer a {
     .headerlp {   
         height: 17rem !important;
     }
+    .conjunto details summary {
+        width: 95%;        
+    }
+    
 }
 
 @media (max-width: 640px) {
